@@ -10,14 +10,14 @@
 </style>
 
 <header>
-  <h1>NutriShape</h1>
+  <h1>buisinessDE</h1>
   <p>Bienvenue ! Ici, je partage des ressources utiles pour lancer et automatiser ton business en ligne.</p>
 </header>
 
 <section>
   <h2>Inscris-toi pour recevoir ton guide gratuit</h2>
-  <!-- COLLER ICI TON CODE D'EMBED MAILERLITE -->
-  <form action="https://static.mailerlite.com/webforms/submit/XXXXXX" method="post" target="_blank">
+  <!-- Formulaire MailerLite -->
+  <form id="ml-form">
     <input type="email" name="fields[email]" placeholder="Ton email" required>
     <button type="submit">Recevoir le guide</button>
   </form>
@@ -28,6 +28,23 @@
   <p>— Article 1 (placeholder)</p>
   <p>— Article 2 (placeholder)</p>
 </section>
+
+<footer>
+  <p>⚠️ Transparence : ce site contient des liens affiliés. Cela signifie que je peux recevoir une commission si tu achètes via mes liens (sans frais supplémentaires pour toi).</p>
+</footer>
+
+<!-- MailerLite Universal Script -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1786083');
+
+  // Initialiser le formulaire MailerLite
+  ml('forms', '#ml-form');
+</script>
+
 
 <footer>
   <p>⚠️ Transparence : ce site contient des liens affiliés. Cela signifie que je peux recevoir une commission si tu achètes via mes liens (sans frais supplémentaires pour toi).</p>
